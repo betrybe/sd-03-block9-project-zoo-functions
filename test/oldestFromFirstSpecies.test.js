@@ -9,8 +9,8 @@ let actual, expected, options
 /**************************/
 
 // passado o id de um funcionário, encontra a primeira espécie de animal
-// gerenciado pelo funcionáio, e retorna um array com nome, sexo e idade do
-// animal mais velho dessa espécide
+// gerenciado pelo funcionário, e retorna um array com nome, sexo e idade do
+// animal mais velho dessa espécie
 actual = zoo.oldestFromFirstSpecies('9e7d4524-363c-416a-8759-8aa7e50c0992')
 expected = ['Vicky', 'female', 12]
 

@@ -24,7 +24,7 @@ expected = {
 
 assert.deepEqual(actual, expected);
 
-// com o nome de uma espécide de animal, retorna somente a quantidade
+// com o nome de uma espécie de animal, retorna somente a quantidade
 actual = zoo.animalCount('lions');
 expected = 4;
 

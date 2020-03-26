@@ -63,7 +63,5 @@ module.exports = {
   animalsOlderThan: animalsOlderThan,
   oldestFromFirstSpecies: oldestFromFirstSpecies,
   increasePrices: increasePrices,
-  createAnimals: createAnimals,
-  Animal: Animal,
   createEmployee: createEmployee
 }
