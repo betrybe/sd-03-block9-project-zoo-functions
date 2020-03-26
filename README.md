@@ -11,9 +11,9 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-03-week9-project-zoo-functions.git`.
+  * `git clone https://github.com/tryber/sd-03-block9-project-zoo-functions.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-03-week9-project-zoo-functions`
+    * `cd sd-03-block9-project-zoo-functions`
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -42,13 +42,13 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   * Usando o exemplo anterior: `git push -u origin joaozinho-project-zoo-functions`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-03-week9-project-zoo-functions/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-03-block9-project-zoo-functions/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-03-week9-project-zoo-functions/pulls) e confira que o seu _Pull Request_ está criado.
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-03-block9-project-zoo-functions/pulls) e confira que o seu _Pull Request_ está criado.
 
 7. Você irá perceber que ao realizar novos `commits` no seu _Pull Request_ eles serão automaticamente analisados pelo _CodeClimate_ e pelo TravisCI_. Se atente para os comentários do _CodeClimate_ que irão conter dicas valiosas de como deixar seu código melhor! Você pode também explorar o _TravisCI_ para obter informações sobre quais _assertions_ ainda precisa adereçar em seu projeto.
 
