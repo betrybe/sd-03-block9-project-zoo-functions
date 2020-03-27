@@ -1,28 +1,23 @@
 const assert = require('assert'),
-  zoo = require('../src/zoo'),
-  data = require('../src/data');
+  zoo = require('../src/zoo');
 
-let actual;
+describe('entryCalculator', () => {
+  it('test', () => {
+    let actual;
 
-/******************************************************************************/
+    // returna 0 se nenhum argumento for passado
+    actual = zoo.entryCalculator();
+    assert.equal(actual, 0);
 
-/*******************/
-/* entryCalculator */
-/*******************/
+    // retorna 0 se um objeto vazio for passado
+    actual = zoo.entryCalculator({});
+    assert.equal(actual, 0);
 
-// returna 0 se nenhum argumento for passado
-actual = zoo.entryCalculator();
-assert.equal(actual, 0);
+    // retorna o preço total a ser cobrado dado o número de adultos, crianças e
+    // idosos
+    const entrants = { 'Adult': 2, 'Child': 3, 'Senior': 1 };
+    actual = zoo.entryCalculator(entrants);
 
-// retorna 0 se um objeto vazio for passado
-actual = zoo.entryCalculator({});
-assert.equal(actual, 0);
-
-// retorna o preço total a ser cobrado dado o número de adultos, crianças e
-// idosos
-const entrants = { 'Adult': 2, 'Child': 3, 'Senior': 1 };
-actual = zoo.entryCalculator(entrants);
-
-assert.equal(actual, 187.94);
-
-/******************************************************************************/
+    assert.equal(actual, 187.94);
+  });
+});
