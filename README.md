@@ -58,7 +58,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ---
 
-## Requisito do projeto 
+## Requisito do projeto
 
 Vocẽ deverá implementar as funções que estão no `src/zoo.js` para passarem em cada um dos testes. O teste `test/animalsByIds.test.js` testa a função addEmployee, que já está criada dentro do `src/zoo.js`. Para ver o que cada função precisa retornar basta ver o assert de cada um dos testes.
 
@@ -66,7 +66,7 @@ Utilize as novas funcionalidades do ES6 como arrow functions, template literals,
 
 Antes de começar analise o arquivo `src/data.js`, para ver os dados que serão usados.
 
-### 1- Implemente a função animalsByIds: 
+### 1- Implemente a função animalsByIds:
   - Caso receba nenhum parâmetro, necessário retornar um array vazio
   - Ao receber como parâmetro um único id, retorna os animais com este id
   - Ao receber mais de um id, retorna os animais que têm um desses ids
@@ -98,14 +98,14 @@ Antes de começar analise o arquivo `src/data.js`, para ver os dados que serão 
   - Retorna 0 se um objeto vazio for passado
   - Retorna o preço total a ser cobrado dado o número de adultos, crianças e idosos
 
-### 9- Implemente a função animalMap: 
+### 9- Implemente a função animalMap:
   - Sem parâmetros, retorna animais categorizados por localização
   - Com opções especificadas, retorna nomes de animais
   - Com opções especificadas, retorna nomes de animais ordenados
   - Com opções especificadas, retorna somente nomes de animais macho/fêmea
   - Só retorna informações específicas de gênero se `includeNames` for setado
 
-### 10- Implemente a função schedule: 
+### 10- Implemente a função schedule:
   - Sem parâmetros, retorna um cronograma legível para humanos
   - Se um único dia for passado, retorna somente este dia em um formato legível para humanos
 
