@@ -5,7 +5,7 @@ const assert = require('assert'),
 let actual, expected, options
 
 /**************/
-/* addEmploye */
+/* addEmployee */
 /**************/
 
 // adiciona um funcionário no fim da lista
