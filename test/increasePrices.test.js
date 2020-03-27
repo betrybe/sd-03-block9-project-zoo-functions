@@ -1,6 +1,6 @@
-const assert = require('assert'),
-  zoo = require('../src/zoo'),
-  data = require('../src/data');
+const assert = require('assert');
+const zoo = require('../src/zoo');
+const data = require('../src/data');
 
 
 describe('increasePrices', () => {

@@ -1,5 +1,5 @@
-const assert = require('assert'),
-  zoo = require('../src/zoo');
+const assert = require('assert');
+const zoo = require('../src/zoo');
 
 describe('animalsOlderThan', () => {
   it('test', () => {
