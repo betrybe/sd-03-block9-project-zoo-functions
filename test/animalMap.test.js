@@ -65,7 +65,7 @@ describe('animalMap', () => {
 
     assert.deepEqual(actual, expected);
 
-    // com oções especificadas, retorna somente nomes de animais macho/fêmea
+    // com opções especificadas, retorna somente nomes de animais macho/fêmea
     options = { includeNames: true, sex: 'female' }
     actual = zoo.animalMap(options);
     expected = {
