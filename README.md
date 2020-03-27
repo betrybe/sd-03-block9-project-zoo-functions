@@ -11,9 +11,9 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-02-week8-project-zoo-functions.git`.
+  * `git clone https://github.com/tryber/sd-03-block9-project-zoo-functions.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-02-week8-project-zoo-functions`
+    * `cd sd-03-block9-project-zoo-functions`
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -42,15 +42,86 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   * Usando o exemplo anterior: `git push -u origin joaozinho-project-zoo-functions`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-02-week8-project-zoo-functions/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-03-block9-project-zoo-functions/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-02-week8-project-zoo-functions/pulls) e confira que o seu _Pull Request_ está criado.
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-03-block9-project-zoo-functions/pulls) e confira que o seu _Pull Request_ está criado.
 
 7. Você irá perceber que ao realizar novos `commits` no seu _Pull Request_ eles serão automaticamente analisados pelo _CodeClimate_ e pelo TravisCI_. Se atente para os comentários do _CodeClimate_ que irão conter dicas valiosas de como deixar seu código melhor! Você pode também explorar o _TravisCI_ para obter informações sobre quais _assertions_ ainda precisa adereçar em seu projeto.
+
+---
+
+### O que deverá ser desenvolvido
+
+---
+
+## Requisito do projeto
+
+Vocẽ deverá implementar as funções que estão no `src/zoo.js` para passarem em cada um dos testes. O teste `test/animalsByIds.test.js` testa a função addEmployee, que já está criada dentro do `src/zoo.js`. Para ver o que cada função precisa retornar basta ver o assert de cada um dos testes.
+
+Utilize as novas funcionalidades do ES6 como arrow functions, template literals, spread operator, parâmetro rest, object destructuring, utilize também as _High Order Functions_.
+
+Antes de começar analise o arquivo `src/data.js`, para ver os dados que serão usados.
+
+### 1- Implemente a função animalsByIds:
+  - Caso receba nenhum parâmetro, necessário retornar um array vazio
+  - Ao receber como parâmetro um único id, retorna os animais com este id
+  - Ao receber mais de um id, retorna os animais que têm um desses ids
+
+### 2- Implemente a função animalsOlderThan:
+  - Ao passar o nome de uma espécie e uma idade, testa se todos os animais desta
+ espécie possuem a idade mínima especificada
+
+### 3- Implemente a função employeeByName:
+  - Sem parâmetros, retorna um objeto vazio
+  - Quando provido o primeiro nome do funcionário, retorna o objeto do funcionário
+  - Quando provido o último nome do funcionário, retorna o objeto do funcionário
+
+### 4- Implemente a função createEmployee:
+  - Cria um novo colaborador a partir de objetos contendo informações pessoais, gerentes e animais gerenciados
+
+### 5- Implemente a função isManager:
+  - Testa se o id passado é de um gerente
+
+### 6- Implemente a função addEmployee:
+  - Adiciona um funcionário no fim da lista
+
+### 7- Implemente a função animalCount:
+  - Sem parâmetros, returna animais e suas quantidades
+  - Com o nome de uma espécie de animal, retorna somente a quantidade
+
+### 8- Implemente a função entryCalculator:
+  - Returna 0 se nenhum argumento for passado
+  - Retorna 0 se um objeto vazio for passado
+  - Retorna o preço total a ser cobrado dado o número de adultos, crianças e idosos
+
+### 9- Implemente a função animalMap:
+  - Sem parâmetros, retorna animais categorizados por localização
+  - Com opções especificadas, retorna nomes de animais
+  - Com opções especificadas, retorna nomes de animais ordenados
+  - Com opções especificadas, retorna somente nomes de animais macho/fêmea
+  - Só retorna informações específicas de gênero se `includeNames` for setado
+
+### 10- Implemente a função schedule:
+  - Sem parâmetros, retorna um cronograma legível para humanos
+  - Se um único dia for passado, retorna somente este dia em um formato legível para humanos
+
+### 11- Implemente a função oldestFromFirstSpecies:
+  - Passado o id de um funcionário, encontra a primeira espécie de animal
+  gerenciado pelo funcionário, e retorna um array com nome, sexo e idade do
+  animal mais velho dessa espécie
+
+### 12- Implemente a função increasePrices:
+  - Ao passar uma porcentagem, incrementa todos os preços, arrendondados em duas casas decimais
+
+### 13- Implemente a função employeeCoverage:
+  - Sem parâmetros, retorna uma lista de funcionários e os animais pelos quais eles são responsáveis
+  - Com o id de um funcionário, retorna os animais pelos quais o funcionário é responsável
+  - Com o primeiro nome de um funcionário, retorna os animais pelos quais o funcionário é responsável
+  - Com o último nome de um um funcionário, retorna os animais pelos quais o funcionário é responsável
 
 ---
 
@@ -80,7 +151,7 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-02`
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-03`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
