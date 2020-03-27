@@ -96,6 +96,5 @@ describe('animalMap', () => {
     expected = 'lions';
 
     assert.equal(actual, expected);
-
   });
 });
